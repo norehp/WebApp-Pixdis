@@ -29,7 +29,7 @@ const Header = ()=> {
         <div style={styles.headerContainer}>
             <div style={{display: "flex", flexDirection: "row"}}>
                 <div style={{marginRight: 20}}>
-                    <ProfileSelector selectedProfile={selectedProfile} listProfile={profiles} onSelectProfile={onSelectProfile}/>
+                    <ProfileSelector selectedProfile={selectedProfile} listProfiles={profiles} onSelectProfile={onSelectProfile}/>
                 </div>
                 <AddProfileButton goTo={goToAddProfile}/>
             </div>
