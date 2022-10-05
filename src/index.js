@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from './App'; // esto se sustituye por el Router 
 import reportWebVitals from './reportWebVitals';
-import {RouterProvider, createBrowserRouter} from "react-router-dom"; //para q sirve esto?
+import {RouterProvider, createBrowserRouter} from "react-router-dom"; 
 import Home from './screens/Home/Home.js';
+import Login from './screens/Login/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -13,7 +13,10 @@ const router = createBrowserRouter([
     path:'/',
     element: <Home/>
   },
-  
+  {
+    path:'/login',
+    element: <Login/>
+  },
 ])
 
 root.render(
